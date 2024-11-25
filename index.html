@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrekkingBoots - Adventure Awaits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash:ital@0;1&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Splash", sans-serif;
+        color: #3e006b;
+        position: relative;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ffffff;
+        transform: skewY(-5deg);
+        z-index: 0;
+      }
+
+      .container {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-family: "Rubik Dirt", system-ui;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #8500e3;
+        animation: pulse 2s infinite;
+      }
+
+      p {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: #8500e3;
+        text-transform: uppercase;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TrekkingBoots</h1>
+      <p>Conquer Every Trail</p>
+    </div>
+  </body>
+</html>
